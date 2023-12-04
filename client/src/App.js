@@ -10,10 +10,7 @@ const App = () => {
   const [modal, setmodal] = useState(true);
 
   useEffect(() => {
-    if (
-      status === "connected" &&
-      account === "0x840589897dcdb1cc8773c616bf22a90e53e961f3"
-    ) {
+    if (status === "connected") {
       setuserConnected(true);
       setmodal(false);
     } else {
